@@ -1,0 +1,91 @@
+body, .background {
+  padding: 0px;
+  margin: 0px;
+  border: 1px white solid;
+
+}
+
+.background-break {
+  background: red;
+  background: -webkit-linear-gradient(left top, #ff4f8d, #ffcc00);
+  background: -o-linear-gradient(bottom right, #ff4f8d, #ffcc00);
+  background: -moz-linear-gradient(bottom right, #ff4f8d, #ffcc00);
+  background: linear-gradient(to bottom right, #ff4f8d, #ffcc00);
+}
+
+.background-work {
+  background: blue;
+  background: -webkit-linear-gradient(left top, #210070, #5ad8f8);
+  background: -o-linear-gradient(bottom right, #210070, #5ad8f8);
+  background: -moz-linear-gradient(bottom right, #210070, #5ad8f8);
+  background: linear-gradient(to bottom right, #210070, #5ad8f8);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: white;
+  font-family: "Avant Garde", sans-serif;
+  font-weight: 200;
+  line-height: 0px;
+}
+#title{
+	font-family: "Brush Script MT", cursive;
+	font-size:70px;
+}
+h1 {
+  padding-top: 45px;
+  font-weight: 800 !important;
+  font-size: 40px;
+}
+
+#settings {
+  max-width: 500px;
+}
+#settings div {
+  display: inline-block;
+  line-height: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+#settings span {
+  font-weight: 800 !important;
+}
+
+.timeSlot {
+  width: 80px !important;
+}
+
+.setTime {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.adjust {
+  margin: 0px !important;
+}
+
+#btn {
+  border-radius: 0px;
+  border: none;
+  padding: 7px;
+  opacity: 0.75;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+#circleDisplay {
+  height: 200px;
+  width: 200px;
+  border: white 2px solid;
+  border-radius: 500px;
+  margin: 15px;
+  padding: 20px;
+}
+
+#circleDisplay h1 {
+  margin-top: 60px;
+}
+
+footer p {
+  color: white;
+  padding: 10px;
+}

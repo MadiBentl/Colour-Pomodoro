@@ -1,0 +1,94 @@
+$bGroundW1: #210070; 
+$bGroundW2: #5ad8f8;
+$bGroundB1: #ff4f8d;
+$bGroundB2: #ffcc00;
+
+$textColour: white;
+$primaryFont:"Avant Garde", sans-serif;
+$equal-size:0px;
+
+@mixin main-font($primaryFont){
+  color: $textColour;
+  font-family: $primaryFont;
+  font-weight: 200;
+  line-height:0px;
+}
+
+@mixin equal-margs($equal-size){
+  padding: $equal-size;
+  margin: $equal-size;
+}
+
+body, .background{
+  @include equal-margs($equal-size);
+}
+.background-break{
+  background: red;
+  background: -webkit-linear-gradient(left top, $bGroundB1, $bGroundB2);
+  background: -o-linear-gradient(bottom right, $bGroundB1, $bGroundB2);
+  background: -moz-linear-gradient(bottom right, $bGroundB1, $bGroundB2); 
+  background: linear-gradient(to bottom right, $bGroundB1, $bGroundB2);
+}
+.background-work{
+  background: blue;
+  background: -webkit-linear-gradient(left top, $bGroundW1, $bGroundW2);
+  background: -o-linear-gradient(bottom right, $bGroundW1, $bGroundW2);
+  background: -moz-linear-gradient(bottom right, $bGroundW1, $bGroundW2);
+  background: linear-gradient(to bottom right, $bGroundW1, $bGroundW2);
+}
+h1, h2, h3, h4, h5, h6, p{
+  @include main-font($primaryFont);
+}
+h1{
+  padding-top:45px;
+  font-weight:800 !important;
+  font-size:40px;
+}
+#settings{
+  max-width:500px;
+  div{
+    display:inline-block;
+	  line-height: 0px;
+	  @include equal-margs($equal-size)
+  }
+  span{
+    font-weight: 800 !important;
+  }
+}
+.timeSlot{
+  width:80px !important;
+}
+.setTime{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.adjust{
+	margin: 0px !important;
+}
+#btn{
+  border-radius:$equal-size;
+  border:none;
+  padding:7px;
+  opacity:0.75;
+  background-color:$textColour;
+  text-transform: uppercase;
+}
+#title{
+	font-family: "Brush Script MT", cursive;
+	font-size:70px;
+}
+#circleDisplay{
+  height:200px;
+	width:200px;
+	border: $textColour 2px solid;
+	border-radius:500px;
+	margin: 15px;
+	padding: 20px;
+}
+#circleDisplay h1{
+	margin-top: 60px;
+}
+footer p{
+	color:$textColour;
+	padding:10px;
+}

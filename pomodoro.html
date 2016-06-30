@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href= "pomodoro.css">
+</head>
+<body>
+	<div class = "background background-work">
+		<center>
+			<h1 id = "title">Colour Pomodoro</h1>
+		  <div id = "settings">
+        <div class = "setTime" id = "workTime">
+          <h5> Work Length</h5>
+          <div id = "workSettings">
+            <div class = "adjust" id = "workMinus"><h2>-</h2></div>
+					  <div class = "timeSlot" id = "workTime"><h2><span id = "workMins">25</span> min</h2></div>
+					  <div class = "adjust" id = "workPlus"><h2>+</h2></div>
+				  </div>
+			  </div>
+        <div class = "setTime" id = "breakTime">
+				  <h5>Break Length</h5>
+          <div id = "breakSettings">
+            <div class = "adjust" id = "breakMinus"><h2>-</h2></div>
+            <div class = "timeSlot" id = "breakTime"><h2><span id = "breakMins">5</span> min</h2></div>
+					  <div class = "adjust" id = "breakPlus"><h2>+</h2></div>
+				  </div>
+			  </div>
+		  </div>
+	  </center>
+	  <center>
+	    <div id = "timer">
+		    <div id = "circleDisplay">
+          <h1><span id="time">25:00</span></h1>
+          <button id = 'btn'>
+            Start
+          </button>
+		    </div>
+	    </div>
+	  </center>
+	<footer>
+		<center>
+			<p> Copyright 2016. Madison Bentley. </p>
+		</center>
+	</footer>
+	</div>
+	<script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type = "text/javascript" src = "pomodoro.js"></script>
+</body>
+</html>
+
+<!-- POMODORO TO DO:
+	1. Map out html/css for FCC's version of pomodoro
+	2. Get the clock function working
+		a. Integrating basic functionality
+		b. Integrating the ability to plan how long you work for
+	3. Plan out adding extras:
+		a. Integrating "goals" and ability to name different sections
+		b. Integrating "reflections"
+		c. Integrating optionality
+		d. Visually track progress towards your goal
+		e. Visually track how much time has elapsed for that pomodoro
+	4. Consider implementing:
+		a. Before leaving the website, give the opportunity to leave a reflection?
+		b. Opportunity to download stats?
+		c. Add congratulatory messages
+		d. background-color changes based on time elapsed?
+			dd. progress bar colour corresponds to the color of the background at that time?  
